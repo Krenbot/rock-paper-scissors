@@ -11,10 +11,10 @@ var losses = 0;
 //define var for computerChoice
 //define var for playerChoice
 
-var playerChoice = prompt("Enter your choice: ");
+var playerChoice = prompt("Enter your choice: R/P/S ");
 
+var random = Math.floor(Math.random() * choice.length)
 var computerChoice = choice[random];
-var random = Array[Math.floor(Math.random() * Array.length)]
 
 //Win Conditions
 if (playerChoice===computerChoice){
