@@ -1,16 +1,35 @@
 //define array for choices [r, p, s]
-//define var for computerChoice
-//define var for playerChoice
+var choice = ["R", "P", "S"];
+
 //define var for wins
 //define var for losses
 //define var for ties
+var wins = 0;
+var ties = 0;
+var losses = 0;
 
-//prompt for playerChoice
+//define var for computerChoice
+//define var for playerChoice
 
-//randomly choose computerChoice
+var playerChoice = prompt("Enter your choice: ");
 
-//compare choices
-    //if playerChoice is 'p' and computerChoice is 'r' 
+var computerChoice = choice[random];
+var random = Array[Math.floor(Math.random() * Array.length)]
+
+//Win Conditions
+if (playerChoice===computerChoice){
+    window.alert("It's a tie!")
+} 
+if (
+    (playerChoice === "R" && computerChoice === "S")||
+    (playerChoice === "S" && computerChoice === "P")||
+    (playerChoice === "P" && computerChoice === "R")
+){
+    window.alert("A winner is you!")
+} else {
+    window.alert("You are a loser!")
+}
+
 
 //display (alert) results (win/tie/lose round)
 
