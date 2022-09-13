@@ -1,9 +1,5 @@
 //define array for choices [r, p, s]
 var choice = ["R", "P", "S"];
-
-//define var for wins
-//define var for losses
-//define var for ties
 var wins = 0;
 var ties = 0;
 var losses = 0;
@@ -12,30 +8,31 @@ var losses = 0;
 //define var for playerChoice
 
 var playerChoice = prompt("Enter your choice: R/P/S ");
-
 var random = Math.floor(Math.random() * choice.length)
 var computerChoice = choice[random];
-
+var keepPlaying = true
 //Win Conditions
-if (playerChoice===computerChoice){
+
+if
+ (playerChoice===computerChoice){
     window.alert("It's a tie!")
-} 
-if (
+    ties++
+    result = "Tied"
+} if (
     (playerChoice === "R" && computerChoice === "S")||
     (playerChoice === "S" && computerChoice === "P")||
     (playerChoice === "P" && computerChoice === "R")
-){
+)}
+else if {
     window.alert("A winner is you!")
+    wins++
+    result = "Win!"
 } else {
     window.alert("You are a loser!")
+    losses++
+    result = "Lost!"
 }
 
 
-//display (alert) results (win/tie/lose round)
-
-//show stats (number of wins/losses/ties)
-
-//play again? y/n
-    //restart game
-    //else, 
-    //cancel game
+//Show stats
+alert("Stats:\nWins: " + wins + "\nLosses: " + losses + "\nTies: " + ties);
